@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ContaPY Theme — Azul #1A3A6B · Amarillo #F5C518 */
+:root {
+  --contapy-blue: #1A3A6B;
+  --contapy-yellow: #F5C518;
+}
+
+/* Scrollbar thin */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1A3A6B20 transparent;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: #1A3A6B30;
+  border-radius: 99px;
+}
+*::-webkit-scrollbar-thumb:hover { background: #1A3A6B60; }
+
+/* Smooth transitions */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #1A3A6B;
+  outline-offset: 2px;
+}
+
+/* Transitions */
+a, button, input, select, textarea {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 150ms;
+}
